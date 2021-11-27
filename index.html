@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+  <head>
+     <title>WEBLAYOUT</title>
+	 <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<!--<link href="https://fonts.googleapis.com/css2?family=Flow+Circular&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">-->
+<link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Tangerine">
+	 <style>
+	 *{
+	   box-sizing:border-box;
+	 }
+		   body{
+		         margin:0px;
+				 padding:10px;
+				 background-color:#999;
+	           }
+			   header{
+					width:100%;
+					padding:40px;
+					
+					color:white;
+					text-align:center;
+					background: rgb(34,193,195);
+background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+			   }
+			   header h1{
+	           font-size:50px;
+			   text-shadow:1px 1px 3px #000;
+	           }
+			   nav{
+			       overflow:hidden;
+				   background:black;
+				   position:sticky;
+				   top:0px;
+				   z-index:10;
+				 }
+			 nav a{
+			        float:left;
+					display:block;
+					color:white;
+					padding: 16px 24px;
+					text-decoration:none;
+				 }
+			nav a:last-child{
+			        float:right;
+			}
+			nav a:hover{
+			       background:white;
+				   color:black;
+			}
+			.content{
+			  background:white;
+			  display:relative;
+			  float:left;
+			  width:100%;
+			  font-family: 'Flow Circular', cursive;
+			}
+			.content1{
+			      float:left;
+					width:75%;
+					height:auto;
+					padding:15px;
+					background:white;
+			        }
+		   .content2{
+		           float:left;
+					width:25%;
+					height:auto;
+					padding:15px;
+					background:white;
+			        }
+
+			.btn{
+			  display:inline-block;
+			  background:gray;
+			  text-decoration:none;
+			  color:white;
+			  height:30px;
+			  width:100px;
+			  text-align:center;
+			  line-height:30px;
+			  text-shadow:1px 1px 1px #000; 
+			}
+			.btn-1{
+				background:green;
+			}
+			.btn-2{
+				background:red;
+			}
+			.btn-3{
+				background:blue;
+			}
+			.btn-4{
+				background:crimson;
+			}
+			.btn-5{
+				background:linear-gradient(0deg, blue, crimson, yellow);
+			}
+			.btn-round{
+			  border-radius:5px;
+			}
+		.card{
+		 width:100%;
+		 padding:10px;
+		 background:#eee;
+		 margin-bottom:20px;
+		}
+		.article-image{
+		  width:100%;
+		  height:500px;
+		  display:block;
+		  position:relative;
+		  overflow:hidden;
+		}
+		.article-image img{
+		  width:100%;
+		  transition: transform .2s;
+		}
+		 img:hover{
+		  transform: scale(1.1);
+		  z-index:1;
+		}
+		.article-image .social-fb{
+			position:absolute;
+			bottom:20px;
+			display:block;
+			background-image:url('https://theboxescaperoom.com/wp-content/uploads/2017/11/fb.png');
+			background-size:cover;
+			background-position:center center;
+			right:20px;
+			width:30px;
+			height:30px;
+		
+		}
+		.article-image .social-wt{
+			position:absolute;
+			bottom:20px;
+			display:block;
+			background-image:url('https://logodownload.org/wp-content/uploads/2015/04/whatsapp-logo-1.png');
+			background-size:cover;
+			background-position:center center;
+			right:60px;
+			width:30px;
+			height:30px;
+			
+		
+		}
+		.article-image .social-in{
+			position:absolute;
+			bottom:20px;
+			display:block;
+			background-image:url('https://assets.stickpng.com/images/580b57fcd9996e24bc43c521.png');
+			background-size:cover;
+			background-position:center center;
+			right:100px;
+			width:30px;
+			height:30px;
+		
+		}
+			 footer{
+                     clear:both;
+			         text-align:center;
+			         width:100%;
+					 background:black;
+					 padding:5px;
+					 color:white;
+			       }
+			footer p{
+				font-size:12px;
+			}
+			.author-profile{
+			  position:sticky;
+			  top:0px;
+			}
+	 </style>
+  </head>
+  <body>
+
+       <header>
+            <h1>MY WEBSITE</h1>
+            <p>This website will help you alot !!!<p>
+       </header>
+	   <nav>
+	     <a href="#">link</a>
+		  <a href="#">link</a>
+		   <a href="#">link</a>
+		    <a href="#">link</a>
+	   </nav>
+	   <div class="content">
+	     <div class="content1">
+				 <div class="card">
+				   <h2>Lorem Ipsum is simply</h2>
+				   <div class="article-image">
+					 <img src="https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/5ee149b8-782c-49f4-9f36-3a8d1a5ba33f/finished-beetle.png">
+					 <a class="social-fb" href="#"></a>
+					 <a class="social-wt" href="#"></a>
+					 <a class="social-in" href="#"></a>
+				   </div>
+				   <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+				   <a href="#" class="btn btn-2 btn-round">Read More.</a>
+				 </div>
+				 <div class="card">
+				   <h2>Lorem Ipsum is simply</h2>
+				   <div class="article-image">
+					 <img src="https://img.lovepik.com/photo/40011/3499.jpg_wh860.jpg">
+					 <a class="social-fb" href="#"></a>
+					 <a class="social-wt" href="#"></a>
+					 <a class="social-in" href="#"></a>
+				   </div>
+				   <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+				   <a href="#" class="btn btn-2 btn-round">Read More.</a>
+				 </div>
+				 <div class="card">
+				   <h2>Lorem Ipsum is simply</h2>
+				   <div class="article-image">
+					 <img src="https://static.vecteezy.com/system/resources/previews/000/667/726/non_2x/people-creating-ideas-to-success-flat-design.jpg">
+					 <a class="social-fb" href="#"></a>
+					 <a class="social-wt" href="#"></a>
+					 <a class="social-in" href="#"></a>
+				   </div>
+				   <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+				   <a href="#" class="btn btn-2 btn-round">Read More.</a>
+				 </div>
+				 <div class="card">
+				   <h2>Lorem Ipsum is simply</h2>
+				   <div class="article-image">
+					 <img src="https://pixel77.com/wp-content/uploads/2020/05/woman-addicted-social-media_23-2148393337.jpg">
+					 <a class="social-fb" href="#"></a>
+					 <a class="social-wt" href="#"></a>
+					 <a class="social-in" href="#"></a>
+				   </div>
+				   <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+				   <a href="#" class="btn btn-2 btn-round">Read More.</a>
+				 </div>
+		   </div>
+		   <div class="content2">
+			   <div class="author-profile">
+			     <h2>DETAILS:</h2>
+			   <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Ipsum is simply dummy text of the printing and typesetting industry.</p>
+			   </div>
+		   </div>
+	   </div>
+	   <footer>
+		  <p>Develop By: Divyanshi-&copy;All rigth reserve-2021</p>
+	   </footer>
+  </body>
+</html>
